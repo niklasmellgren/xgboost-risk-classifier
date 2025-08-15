@@ -4,7 +4,7 @@ A machine learning solution to predict colonist disappearances on the Martian co
 
 ## Project Overview
 
-The colony Prosperity-3 has been experiencing mysterious disappearances. This project develops a predictive model to identify colonists at risk of disappearing, using various clues provided by the Senior Data Scientist including ID detector visits, shift patterns, and demographic information.
+The colony Prosperity-3 has been experiencing mysterious disappearances. This project develops a predictive XGBoost model to identify colonists at risk of disappearing, using various clues provided by the Senior Data Scientist including ID detector visits, shift patterns, and demographic information.
 
 ## Problem Statement
 
