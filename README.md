@@ -11,7 +11,6 @@ The colony Prosperity-3 has been experiencing mysterious disappearances. This pr
 - **Objective**: Predict which colonists are at risk of disappearing
 - **Data**: 6,500+ colonist records with demographic, behavioral, and shift data
 - **Challenge**: Highly imbalanced dataset (1:40 ratio of missing to non-missing)
-- **Constraint**: Zero-miss policy preferred (no actual disappearances should be missed)
 
 ## Key Insights Discovered
 
