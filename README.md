@@ -16,7 +16,7 @@ The colony Prosperity-3 has been experiencing mysterious disappearances. This pr
 ## Key Insights Discovered
 
 ### 1. **Family-Staff Connection** 
-- Colonists with staff surnames are **2.3x more likely** to disappear
+- Colonists with staff surnames are 2.3x more likely to disappear
 - 27 staff members have missing family members
 - Strong indicator of targeted disappearances
 
