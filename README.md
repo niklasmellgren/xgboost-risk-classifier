@@ -1,10 +1,14 @@
 # Martian Colony Disappearance Prediction
 
-A machine learning solution to predict colonist disappearances on the Martian colony Prosperity-3.
+An advanced machine learning solution to predict and prevent colonist disappearances on the Martian colony Prosperity-3.
 
 ## Project Overview
 
-The colony Prosperity-3 has been experiencing mysterious disappearances. This project develops a predictive XGBoost model to identify colonists at risk of disappearing, using various clues provided by the Senior Data Scientist including ID detector visits, shift patterns, and demographic information.
+**The Crisis**: Colony Prosperity-3 is facing a mysterious wave of disappearances threatening the safety of over 6,500 colonists. Traditional security measures have failed to identify patterns or prevent further incidents.
+
+**The Mission**: Develop a predictive early-warning system to identify colonists at risk before they disappear, using advanced machine learning techniques on behavioral data, shift patterns, and demographic indicators.
+
+**The Breakthrough**: Achieved 98.9% AUC with zero-miss detection, uncovering a systematic conspiracy targeting vulnerable colonists. The model revealed this isn't random - it's coordinated insider threats with clear patterns in victim selection and timing.
 
 ## Problem Statement
 
@@ -67,7 +71,7 @@ The colony Prosperity-3 has been experiencing mysterious disappearances. This pr
 - **Feature Selection**: Optimized subset of most predictive features for better performance and interpretability
 - **Threshold**: Calibrated to achieve zero-miss policy (100% recall)
 - **AUC**: 0.989 (excellent discrimination)
-- **Precision**: 0.291 (approx. 1 in 3 alerts is a true case)
+- **Precision**: 0.291 (1 in 3 alerts is a true case)
 - **Recall**: 1.000 (no disappearances missed)
 - **Alerts**: 406 out of 4,680 colonists (8.7%)
 
@@ -108,22 +112,6 @@ The model enables proactive intervention by:
 - Temporal clustering of disappearances suggests coordinated events
 - High AUC (0.989) indicates excellent model discrimination capability
 
-## Repository Structure
-
-```
-colonist_disappearance/
-├── Niklas_Mellgren_Prosperity-3_Case_Solution.ipynb
-├── README.md
-├── data/
-│   ├── data_train_fin.csv
-│   ├── data_test_fin.csv
-│   ├── missing_report.csv
-│   └── shift_report.csv
-└── outputs/
-    ├── martian_disappearance_predictions.csv
-    └── martian_disappearance_predictions_clean.csv
-```
-
 ## Key Technologies
 
 - **Python 3.11**
@@ -132,4 +120,3 @@ colonist_disappearance/
 - **Visualization**: matplotlib, seaborn
 - **Explainability**: SHAP
 - **Environment**: Google Colab
-
