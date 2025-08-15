@@ -105,13 +105,6 @@ The model enables proactive intervention by:
 4. **Data Collection**: Gather more granular temporal data for pattern analysis
 5. **Model Updates**: Retrain monthly as new disappearance data becomes available
 
-## Notes
-
-- This solution prioritizes recall over precision to ensure no disappearances are missed
-- The model identified suspicious family-staff connections warranting investigation
-- Temporal clustering of disappearances suggests coordinated events
-- High AUC (0.989) indicates excellent model discrimination capability
-
 ## Key Technologies
 
 - **Python 3.11**
