@@ -10,12 +10,6 @@ An XGBoost-powered machine learning solution to predict and prevent colonist dis
 
 **The breakthrough**: Achieved 98.9% AUC with zero-miss detection, uncovering a systematic conspiracy targeting vulnerable colonists. The model revealed this isn't random, but that it's coordinated insider threats with clear patterns in victim selection and timing.
 
-## Problem Statement
-
-- **Objective**: Predict which colonists are at risk of disappearing
-- **Data**: 6,500+ colonist records with demographic, behavioral, and shift data
-- **Challenge**: Highly imbalanced dataset (1:40 ratio of missing to non-missing)
-
 ## Key Insights Discovered
 
 ### 1. **Family-Staff Connection** 
