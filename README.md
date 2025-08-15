@@ -1,14 +1,14 @@
 # Martian Colony Disappearance Prediction
 
-An advanced machine learning solution to predict and prevent colonist disappearances on the Martian colony Prosperity-3.
+An XGBoost-powered machine learning solution to predict and prevent colonist disappearances on the Martian colony Prosperity-3.
 
 ## Project Overview
 
-**The Crisis**: Colony Prosperity-3 is facing a mysterious wave of disappearances threatening the safety of over 6,500 colonists. Traditional security measures have failed to identify patterns or prevent further incidents.
+**The crisis**: Colony Prosperity-3 is facing a mysterious wave of disappearances threatening the safety of over 6,500 colonists. Traditional security measures have failed to identify patterns or prevent further incidents.
 
-**The Mission**: Develop a predictive early-warning system to identify colonists at risk before they disappear, using advanced machine learning techniques on behavioral data, shift patterns, and demographic indicators.
+**The mission**: Develop a predictive early-warning system to identify colonists at risk before they disappear, using advanced machine learning techniques on behavioral data, shift patterns, and demographic indicators.
 
-**The Breakthrough**: Achieved 98.9% AUC with zero-miss detection, uncovering a systematic conspiracy targeting vulnerable colonists. The model revealed this isn't random - it's coordinated insider threats with clear patterns in victim selection and timing.
+**The breakthrough**: Achieved 98.9% AUC with zero-miss detection, uncovering a systematic conspiracy targeting vulnerable colonists. The model revealed this isn't random - it's coordinated insider threats with clear patterns in victim selection and timing.
 
 ## Problem Statement
 
