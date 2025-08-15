@@ -47,6 +47,13 @@ The colony Prosperity-3 has been experiencing mysterious disappearances. This pr
 - **Validation**: Stratified 5-fold cross-validation
 - **Hyperparameter Tuning**: RandomizedSearchCV with 40 iterations
 
+### Model Variants & Optimization
+- **Full Model**: Uses all engineered features
+- **Reduced Model**: Optimized feature subset focusing on the most predictive variables, reducing noise and improving interpretability
+- **Threshold Optimization**: Two policy approaches tested:
+  - **Zero-miss Policy**: Threshold optimized to achieve 100% recall (no missed disappearances)
+  - **F1-max Policy**: Threshold optimized to maximize F1-score (balanced precision/recall)
+
 ### Model Performance
 | Model | Policy | AUC | Precision | Recall | F1 | Test Alerts |
 |-------|--------|-----|-----------|--------|----|-----------:|
@@ -58,10 +65,14 @@ The colony Prosperity-3 has been experiencing mysterious disappearances. This pr
 ## Final Solution
 
 **Selected Model**: Reduced Feature Set + Zero-miss Policy
+- **Feature Selection**: Optimized subset of most predictive features for better performance and interpretability
+- **Threshold**: Calibrated to achieve zero-miss policy (100% recall)
 - **AUC**: 0.989 (excellent discrimination)
 - **Precision**: 0.291 (1 in 3 alerts is a true case)
 - **Recall**: 1.000 (no disappearances missed)
 - **Alerts**: 406 out of 4,680 colonists (8.7%)
+
+**Policy Justification**: The zero-miss policy was chosen over F1-maximization because missing an actual disappearance has much higher cost than investigating false positives in this critical safety scenario.
 
 ## Feature Importance
 
@@ -74,6 +85,29 @@ Top predictive features identified through XGBoost importance and SHAP analysis:
 6. **sleep_avg** - Average sleep duration
 7. **zip_code** - Geographic origin
 8. **on_duty_* flags** - ID detector visit history
+
+## Business Impact
+
+The model enables proactive intervention by:
+- **Identifying high-risk colonists** before they disappear
+- **Optimizing security resources** with 406 targeted alerts vs. monitoring all 4,680 colonists
+- **Preventing disappearances** through early warning system
+- **Investigating staff-family connections** for potential security breaches
+
+## Recommendations
+
+1. **Immediate Action**: Implement enhanced monitoring for the 406 flagged colonists
+2. **Investigation**: Focus on staff members with missing family members
+3. **Security**: Increase surveillance around ID detector locations
+4. **Data Collection**: Gather more granular temporal data for pattern analysis
+5. **Model Updates**: Retrain monthly as new disappearance data becomes available
+
+## Notes
+
+- This solution prioritizes recall over precision to ensure no disappearances are missed
+- The model identified suspicious family-staff connections warranting investigation
+- Temporal clustering of disappearances suggests coordinated events
+- High AUC (0.989) indicates excellent model discrimination capability
 
 ## Repository Structure
 
@@ -100,25 +134,3 @@ colonist_disappearance/
 - **Explainability**: SHAP
 - **Environment**: Google Colab
 
-## Business Impact
-
-The model enables proactive intervention by:
-- **Identifying high-risk colonists** before they disappear
-- **Optimizing security resources** with 406 targeted alerts vs. monitoring all 4,680 colonists
-- **Preventing disappearances** through early warning system
-- **Investigating staff-family connections** for potential security breaches
-
-## Recommendations
-
-1. **Immediate Action**: Implement enhanced monitoring for the 406 flagged colonists
-2. **Investigation**: Focus on staff members with missing family members
-3. **Security**: Increase surveillance around ID detector locations
-4. **Data Collection**: Gather more granular temporal data for pattern analysis
-5. **Model Updates**: Retrain monthly as new disappearance data becomes available
-
-## Notes
-
-- This solution prioritizes recall over precision to ensure no disappearances are missed
-- The model identified suspicious family-staff connections warranting investigation
-- Temporal clustering of disappearances suggests coordinated events
-- High AUC (0.989) indicates excellent model discrimination capability
