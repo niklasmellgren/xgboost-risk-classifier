@@ -65,7 +65,7 @@ An XGBoost-powered machine learning solution to predict and prevent colonist dis
 - **Feature Selection**: Optimized subset of most predictive features for better performance and interpretability
 - **Threshold**: Calibrated to achieve zero-miss policy (100% recall)
 - **AUC**: 0.989 (excellent discrimination)
-- **Precision**: 0.291 (1 in 3 alerts is a true case)
+- **Precision**: 0.291 (approx. 1 in 3 alerts is a true case)
 - **Recall**: 1.000 (no disappearances missed)
 - **Alerts**: 406 out of 4,680 colonists (8.7%)
 
